@@ -314,7 +314,7 @@ app.get("/post", async (req, res) => {
 app.get("/post/:id", async (req, res) => {
   const { id } = req.params;
   const postDoc = await Post.findByIdAndUpdate(id, {
-    $inc: { views: 0.5 },
+    $inc: { views: 1 },
   }).populate("author", ["username"]);
   res.json(postDoc);
 });
