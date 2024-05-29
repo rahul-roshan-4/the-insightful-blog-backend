@@ -18,7 +18,7 @@ const path = require("path");
 app.use(express.static(path.join(__dirname, "build")));
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://the-insightful-blog-rahul.onrender.com",
+  "https://the-insightful-blog-frontend-rahul.onrender.com",
 ];
 
 app.use(
